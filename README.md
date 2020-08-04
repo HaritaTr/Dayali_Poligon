@@ -1,2 +1,1 @@
-# Dayali_Poligon
-Dayalı Poligon Hesabı
+# Dayalı Poligon Hesabı
