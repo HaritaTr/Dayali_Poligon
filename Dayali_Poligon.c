@@ -8,6 +8,7 @@ int main()
 
 	double a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
 	double x1, y1, x2, y2, x3, y3, x4, y4;
+	double So, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -52,8 +53,31 @@ int main()
 	scanf("%lf", &y3);
 	printf("y4 değerini giriniz: ");
 	scanf("%lf", &y4);
-
 	// Ölçülen mesafeler; So, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11; */
+	printf("So değerini giriniz: ");
+	scanf("%lf", &So);
+	printf("S1 değerini giriniz: ");
+	scanf("%lf", &S1);
+	printf("S2 değerini giriniz: ");
+	scanf("%lf", &S2);
+	printf("S3 değerini giriniz: ");
+	scanf("%lf", &S3);
+	printf("S4 değerini giriniz: ");
+	scanf("%lf", &S4);
+	printf("S5 değerini giriniz: ");
+	scanf("%lf", &S5);
+	printf("S6 değerini giriniz: ");
+	scanf("%lf", &S6);
+	printf("S7 değerini giriniz: ");
+	scanf("%lf", &S7);
+	printf("S8 değerini giriniz: ");
+	scanf("%lf", &S8);
+	printf("S9 değerini giriniz: ");
+	scanf("%lf", &S9);
+	printf("S10 değerini giriniz: ");
+	scanf("%lf", &S10);
+	printf("S11 değerini giriniz: ");
+	scanf("%lf", &S11);
 
 		/// Bilinmeyenlerin hesaplanması.
 	printf("\n\t=== Hesap sonuçları! === \n");
