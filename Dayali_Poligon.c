@@ -8,7 +8,8 @@ int main()
 
 	double a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
 	double x1, y1, x2, y2, x3, y3, x4, y4;
-	double So, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11;
+	double S1, S2, S3, S4, S5, S6, S7, S8, S9, S10;
+	double So, S11, St;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -54,8 +55,6 @@ int main()
 	printf("y4 değerini giriniz: ");
 	scanf("%lf", &y4);
 	// Ölçülen mesafeler; So, S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11; */
-	printf("So değerini giriniz: ");
-	scanf("%lf", &So);
 	printf("S1 değerini giriniz: ");
 	scanf("%lf", &S1);
 	printf("S2 değerini giriniz: ");
@@ -76,13 +75,10 @@ int main()
 	scanf("%lf", &S9);
 	printf("S10 değerini giriniz: ");
 	scanf("%lf", &S10);
-	printf("S11 değerini giriniz: ");
-	scanf("%lf", &S11);
 
 		/// Bilinmeyenlerin hesaplanması.
 	printf("\n\t=== Hesap sonuçları! === \n");
 	/* Hesaplanacak semt açıları ; βo, β1, β2, β3, β4, β5, β6, β7, β8, β9, β10, β11, βo1, βo2, βo3, βo4, βo5, βo6, βo7, βo8, βo9, βo10, βo11; */
-
 	/* Hesaplanacak kapanma hataları;
 	> fβ; Açı kapanma hatası
 	> Fβ; Açı kapanma hata sınırı
@@ -93,12 +89,10 @@ int main()
 	> fl; Boyuna kapanma hatası
 	> Fl; Boyuna kapanma hata sınırı
 	> S; Δx ve Δy den bulunan ağ uzunluğu */
-
 	/* Hesaplanacak mesafeler; St;
 	Hesaplanacak Koordinat Farkları;
 	> Δx1, Δy1, Δx2, Δy2, Δx3, Δy3, Δx4, Δy4, Δx5, Δy5, Δx6, Δy6, Δx7, Δy7, Δx8, Δy8, Δx9, Δy9, Δx10, Δy10;
 	> Δxo1, Δyo1, Δxo2, Δyo2, Δxo3, Δyo3, Δxo4, Δyo4, Δxo5, Δyo5, Δxo6, Δyo6, Δxo7, Δyo7, Δxo8, Δyo8, Δxo9, Δyo9, Δxo10, Δyo10, Δxt, Δyt; */
-
 	/* Hesaplanan Koordinat değerleri
 	> x5, y5, x6, y6, x7, y7, x8, y8, x9, y9, x10, y10, x11, y11, x12, y12, x13, y13, x14, y14; */
 
@@ -107,6 +101,9 @@ int main()
 	> So = Sqrt((x1 - x2)^ 2) + (y1 - y2)^ 2);
 	> S11 = Sqrt((x3 - x4)^ 2) + (y3 - y4)^ 2);
 	> St = S1 + S2 + S3 + S4 + S5 + S6 + S7 + S8 + S9 + S10; toplam mesafe */
+	So = pow(((pow((x1 - x2), 2)) + pow((y1 - y2), 2)), 0.5);
+	S11 = pow(((pow((x3 - x4), 2)) + pow((y3 - y4), 2)), 0.5);
+	St = S1 + S2 + S3 + S4 + S5 + S6 + S7 + S8 + S9 + S10;
 
 	/* 1. ve 2. noktalar arasındaki, semt açısı (Dengelenmiş başlangıç noktaları-Nirengi)
 	> βo = Atan((y2 - y1) / (x2 - x1)) * 200 / PI;
