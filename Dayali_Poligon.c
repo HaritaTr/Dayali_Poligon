@@ -15,6 +15,7 @@ int main()
 	double Bo, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11;
 	double Bo1, Bo2, Bo3, Bo4, Bo5, Bo6, Bo7, Bo8, Bo9, Bo10, Bo11;
 	double fB, FB;
+	double Dxo1, Dyo1, Dxo2, Dyo2, Dxo3, Dyo3, Dxo4, Dyo4, Dxo5, Dyo5, Dxo6, Dyo6, Dxo7, Dyo7, Dxo8, Dyo8, Dxo9, Dyo9, Dxo10, Dyo10;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -242,11 +243,31 @@ int main()
 	/* Yaklaşık koordinat farklarını hesaplayalım;
 	> Δxo1, Δxo2, Δxo3, Δxo4, Δxo5, Δxo6, Δxo7, Δxo8, Δxo9, Δxo10
 	> Δyo1, Δyo2, Δyo3, Δyo4, Δyo5, Δyo6, Δyo7, Δyo8, Δyo9, Δyo10
-	> Δxo1 = S1 * Cos(β1 * PI / 200);
-	> Δyo1 = S1 * Sin(β1 * PI / 200);
-	>Δxo2 = ……………….
+	> Δxo1 = S1 * cos(β1 * PI / 200);
+	> Δyo1 = S1 * sin(β1 * PI / 200);
+	> Δxo2 = ……………….
 	> Δxt = Δxo1 + Δxo2 + Δxo3 + Δxo4 + Δxo5 + Δxo6 + Δxo7 + Δxo8 + Δxo9 + Δxo10;
 	> Δyt = Δyo1 + Δyo2 + Δyo3 + Δyo4 + Δyo5 + Δyo6 + Δyo7 + Δyo8 + Δyo9 + Δyo10; */
+	Dxo1 = S1 * cos(B1 * PI / 200);
+	Dyo1 = S1 * sin(B1 * PI / 200);
+	Dxo2 = S2 * cos(B2 * PI / 200);
+	Dyo2 = S2 * sin(B2 * PI / 200);
+	Dxo3 = S3 * cos(B3 * PI / 200);
+	Dyo3 = S3 * sin(B3 * PI / 200);
+	Dxo4 = S4 * cos(B4 * PI / 200);
+	Dyo4 = S4 * sin(B4 * PI / 200);
+	Dxo5 = S5 * cos(B5 * PI / 200);
+	Dyo5 = S5 * sin(B5 * PI / 200);
+	Dxo6 = S6 * cos(B6 * PI / 200);
+	Dyo6 = S6 * sin(B6 * PI / 200);
+	Dxo7 = S7 * cos(B7 * PI / 200);
+	Dyo7 = S7 * sin(B7 * PI / 200);
+	Dxo8 = S8 * cos(B8 * PI / 200);
+	Dyo8 = S8 * sin(B8 * PI / 200);
+	Dxo9 = S9 * cos(B9 * PI / 200);
+	Dyo9 = S9 * sin(B9 * PI / 200);
+	Dxo10 = S10 * cos(B10 * PI / 200);
+	Dyo10 = S10 * sin(B10 * PI / 200);
 
 	/* Koordinat kapanma hatası; > fx, fy
 	> fy = ((y3 - y2) - Δyt);
