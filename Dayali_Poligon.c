@@ -6,10 +6,34 @@ int main()
 {
 	setlocale(LC_ALL, "Turkish");
 
-	//double 
+	double a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
 
 		/// Bilinenleri isteyelim.
-	// Kırılma açıları; α1, α2, α3, α4, α5, α6, α7, α8, α9, α10, α11, n;
+	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
+	printf("a1 değerini giriniz: ");
+	scanf("%lf", &a1);
+	printf("a2 değerini giriniz: ");
+	scanf("%lf", &a2);
+	printf("a3 değerini giriniz: ");
+	scanf("%lf", &a3);
+	printf("a4 değerini giriniz: ");
+	scanf("%lf", &a4);
+	printf("a5 değerini giriniz: ");
+	scanf("%lf", &a5);
+	printf("a6 değerini giriniz: ");
+	scanf("%lf", &a6);
+	printf("a7 değerini giriniz: ");
+	scanf("%lf", &a7);
+	printf("a8 değerini giriniz: ");
+	scanf("%lf", &a8);
+	printf("a9 değerini giriniz: ");
+	scanf("%lf", &a9);
+	printf("a10 değerini giriniz: ");
+	scanf("%lf", &a10);
+	printf("a11 değerini giriniz: ");
+	scanf("%lf", &a11);
+	printf("n değerini giriniz: ");
+	scanf("%lf", &n);
 
 	// Ölçülen koordinat değerleri; x1, y1, x2, y2, x3, y3, x4, y4;
 
