@@ -12,6 +12,7 @@ int main()
 	double x1, y1, x2, y2, x3, y3, x4, y4;
 	double S1, S2, S3, S4, S5, S6, S7, S8, S9, S10;
 	double So, S11, St;
+	double Bo;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -112,7 +113,8 @@ int main()
 	/* 1. ve 2. noktalar arasındaki, semt açısı (Dengelenmiş başlangıç noktaları-Nirengi)
 	> βo = Atan((y2 - y1) / (x2 - x1)) * 200 / PI;
 	NOT: Açı ‘0’ dan küçük ise +200 eklenir. ‘0’dan büyük ve eşit ise açı değeri korunur. */
-
+	Bo = atan(((y2 - y1) / (x2 - x1)) * 200 / PI);
+	printf("Bo değeri: %f\n", Bo);
 	/* 12. ve 13. noktalar arasındaki, semt açısı (Dengelenmiş bitiş noktaları-Nirengi)
 	> β11…………. */
 
