@@ -17,6 +17,7 @@ int main()
 	double fB, FB;
 	double Dxo1, Dyo1, Dxo2, Dyo2, Dxo3, Dyo3, Dxo4, Dyo4, Dxo5, Dyo5, Dxo6, Dyo6, Dxo7, Dyo7, Dxo8, Dyo8, Dxo9, Dyo9, Dxo10, Dyo10, Dxt, Dyt;
 	double fx, fy;
+	double Dx1, Dx2, Dx3, Dx4, Dx5, Dx6, Dx7, Dx8, Dx9, Dx10, Dy1, Dy2, Dy3, Dy4, Dy5, Dy6, Dy7, Dy8, Dy9, Dy10;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -275,16 +276,47 @@ int main()
 	> fy = ((y3 - y2) - Δyt);
 	> fx = ((x3 - x2) - Δxt); */
 	fy = ((y3 - y2) - Dyt);
+	printf("fy değeri: %f\n", fy);
 	fx = ((x3 - x2) - Dxt);
-	/* Kapanma hataları eklenen, Koordinat farkları;
-	> Δx1, Δx2, Δx3, Δx4, Δx5, Δx6, Δx7, Δx8, Δx9, Δx10
-	> Δy1, Δy2, Δy3, Δy4, Δy5, Δy6, Δy7, Δy8, Δy9, Δy10
+	printf("fx değeri: %f\n", fx);
+	/* Kapanma hataları eklenen, koordinat farkları;
+	> Dx1, Dx2, Dx3, Dx4, Dx5, Dx6, Dx7, Dx8, Dx9, Dx10
+	> Dy1, Dy2, Dy3, Dy4, Dy5, Dy6, Dy7, Dy8, Dy9, Dy10
 	> Δx1 = Δxo1 + (fx / (n - 1));
 	> Δy1 = Δyo1 + (fy / (n - 1));
 	> Δx2 = Δxo2 + (fx / (n - 1));
 	> Δy2 = Δyo2 + (fy / (n - 1));
 	> Δx3=…………………… */
-
+	Dx1 = Dxo1 + (fx / (n - 1));
+	Dy1 = Dyo1 + (fy / (n - 1));
+	printf("Dx1 değeri: %f \t Dy1 değeri: %f\n", Dx1, Dy1);
+	Dx2 = Dxo2 + (fx / (n - 1));
+	Dy2 = Dyo2 + (fy / (n - 1));
+	printf("Dx2 değeri: %f \t Dy2 değeri: %f\n", Dx2, Dy2);
+	Dx3 = Dxo3 + (fx / (n - 1));
+	Dy3 = Dyo3 + (fy / (n - 1));
+	printf("Dx3 değeri: %f \t Dy3 değeri: %f\n", Dx3, Dy3);
+	Dx4 = Dxo4 + (fx / (n - 1));
+	Dy4 = Dyo4 + (fy / (n - 1));
+	printf("Dx4 değeri: %f \t Dy4 değeri: %f\n", Dx4, Dy4);
+	Dx5 = Dxo5 + (fx / (n - 1));
+	Dy5 = Dyo5 + (fy / (n - 1));
+	printf("Dx5 değeri: %f \t Dy5 değeri: %f\n", Dx5, Dy5);
+	Dx6 = Dxo6 + (fx / (n - 1));
+	Dy6 = Dyo6 + (fy / (n - 1));
+	printf("Dx6 değeri: %f \t Dy6 değeri: %f\n", Dx6, Dy6);
+	Dx7 = Dxo7 + (fx / (n - 1));
+	Dy7 = Dyo7 + (fy / (n - 1));
+	printf("Dx7 değeri: %f \t Dy7 değeri: %f\n", Dx7, Dy7);
+	Dx8 = Dxo8 + (fx / (n - 1));
+	Dy8 = Dyo8 + (fy / (n - 1));
+	printf("Dx8 değeri: %f \t Dy8 değeri: %f\n", Dx8, Dy8);
+	Dx9 = Dxo9 + (fx / (n - 1));
+	Dy9 = Dyo9 + (fy / (n - 1));
+	printf("Dx9 değeri: %f \t Dy9 değeri: %f\n", Dx9, Dy9);
+	Dx10 = Dxo10 + (fx / (n - 1));
+	Dy10 = Dyo10 + (fy / (n - 1));
+	printf("Dx10 değeri: %f \t Dy10 değeri: %f\n", Dx10, Dy10);
 	/* Kapanma hataları eklenen, aranan Koordinat değerleri;
 	> x5, y5, x6, y6, x7, y7, x8, y8, x9, y9, x10, y10, x11, y11, x12, y12, x13, y13, x14, y14;
 	> x13 = x2 + Δx1;
