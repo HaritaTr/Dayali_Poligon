@@ -18,6 +18,8 @@ int main()
 	double Dxo1, Dyo1, Dxo2, Dyo2, Dxo3, Dyo3, Dxo4, Dyo4, Dxo5, Dyo5, Dxo6, Dyo6, Dxo7, Dyo7, Dxo8, Dyo8, Dxo9, Dyo9, Dxo10, Dyo10, Dxt, Dyt;
 	double fx, fy;
 	double Dx1, Dx2, Dx3, Dx4, Dx5, Dx6, Dx7, Dx8, Dx9, Dx10, Dy1, Dy2, Dy3, Dy4, Dy5, Dy6, Dy7, Dy8, Dy9, Dy10;
+	double S, fQ, fl, Fl, FQ;
+
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -354,7 +356,6 @@ int main()
 	x14 = x13 + Dx1;
 	y14 = y13 + Dy1;
 	printf("x14 değeri: %f \t y14 değeri: %f\n", x14, y14);
-
 	/* Enine ve boyuna kapanma hatası
 	> fQ, FQ, fl, FL
 	> S = Sqrt((Δxt)^2 + (Δyt)^ 2));
@@ -362,6 +363,16 @@ int main()
 	> fl = (((fy * Δyt) + (fx * Δxt)) / S);
 	> Fl = (0.05 + 0.04 * Sqrt(n - 1));
 	> FQ = (0.05 + (0.15 * Math.Sqrt(S))); */
+	S = pow((pow((Dxt), 2) + pow((Dyt), 2)), 0.5);
+	fQ = (((fy * Dxt) - (fx * Dyt)) / S); 
+	fl = (((fy * Dyt) + (fx * Dxt)) / S);
+	Fl = (0.05 + 0.04 * pow((n - 1), 0.5));
+	FQ = (0.05 + (0.15 * pow((S), 0.5)));
+	printf("S değeri: %f\n", S);
+	printf("fQ değeri: %f\n", fQ);
+	printf("fl değeri: %f\n", fl);
+	printf("Fl değeri: %f\n", Fl);
+	printf("FQ değeri: %f\n", FQ);
 
 	return 0;
 }
