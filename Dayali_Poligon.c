@@ -9,7 +9,7 @@ int main()
 	setlocale(LC_ALL, "Turkish");
 
 	double a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
-	double x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7, x8, y8, x9, y9, x10, y10, x11, y11, x12, y12, x13, y13;
+	double x1, y1, x2, y2, x3, y3, x4, y4, x5, y5, x6, y6, x7, y7, x8, y8, x9, y9, x10, y10, x11, y11, x12, y12, x13, y13, x14, y14;
 	double S1, S2, S3, S4, S5, S6, S7, S8, S9, S10;
 	double So, S11, St;
 	double Bo, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11;
@@ -324,6 +324,36 @@ int main()
 	> x14 = x13 + Δx2;
 	> y14 = y13 + Δy2;
 	> x5 =………… */
+	x5 = x4 + Dx10;
+	y5 = y4 + Dy10;
+	printf("x5 değeri: %f \t y5 değeri: %f\n", x5, y5);
+	x6 = x5 + Dx9;
+	y6 = y5 + Dy9;
+	printf("x6 değeri: %f \t y6 değeri: %f\n", x6, y6);
+	x7 = x6 + Dx8;
+	y7 = y6 + Dy8;
+	printf("x7 değeri: %f \t y7 değeri: %f\n", x7, y7);
+	x8 = x7 + Dx7;
+	y8 = y7 + Dy7;
+	printf("x8 değeri: %f \t y8 değeri: %f\n", x8, y8);
+	x9 = x8 + Dx6;
+	y9 = y8 + Dy6;
+	printf("x9 değeri: %f \t y9 değeri: %f\n", x9, y9);
+	x10 = x9 + Dx5;
+	y10 = y9 + Dy5;
+	printf("x10 değeri: %f \t y10 değeri: %f\n", x10, y10);
+	x11 = x10 + Dx4;
+	y11 = y10 + Dy4;
+	printf("x11 değeri: %f \t y11 değeri: %f\n", x11, y11);
+	x12 = x11 + Dx3;
+	y12 = y11 + Dy3;
+	printf("x12 değeri: %f \t y12 değeri: %f\n", x12, y12);
+	x13 = x12 + Dx2;
+	y13 = y12 + Dy2;
+	printf("x13 değeri: %f \t y13 değeri: %f\n", x13, y13);
+	x14 = x13 + Dx1;
+	y14 = y13 + Dy1;
+	printf("x14 değeri: %f \t y14 değeri: %f\n", x14, y14);
 
 	/* Enine ve boyuna kapanma hatası
 	> fQ, FQ, fl, FL
