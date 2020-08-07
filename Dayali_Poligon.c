@@ -15,7 +15,8 @@ int main()
 	double Bo, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11;
 	double Bo1, Bo2, Bo3, Bo4, Bo5, Bo6, Bo7, Bo8, Bo9, Bo10, Bo11;
 	double fB, FB;
-	double Dxo1, Dyo1, Dxo2, Dyo2, Dxo3, Dyo3, Dxo4, Dyo4, Dxo5, Dyo5, Dxo6, Dyo6, Dxo7, Dyo7, Dxo8, Dyo8, Dxo9, Dyo9, Dxo10, Dyo10;
+	double Dxo1, Dyo1, Dxo2, Dyo2, Dxo3, Dyo3, Dxo4, Dyo4, Dxo5, Dyo5, Dxo6, Dyo6, Dxo7, Dyo7, Dxo8, Dyo8, Dxo9, Dyo9, Dxo10, Dyo10, Dxt, Dyt;
+	double fx, fy;
 
 		/// Bilinenleri isteyelim.
 	// Kırılma açıları; a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, n;
@@ -268,11 +269,13 @@ int main()
 	Dyo9 = S9 * sin(B9 * PI / 200);
 	Dxo10 = S10 * cos(B10 * PI / 200);
 	Dyo10 = S10 * sin(B10 * PI / 200);
-
+	Dxt = Dxo1 + Dxo2 + Dxo3 + Dxo4 + Dxo5 + Dxo6 + Dxo7 + Dxo8 + Dxo9 + Dxo10;
+	Dyt = Dyo1 + Dyo2 + Dyo3 + Dyo4 + Dyo5 + Dyo6 + Dyo7 + Dyo8 + Dyo9 + Dyo10;
 	/* Koordinat kapanma hatası; > fx, fy
 	> fy = ((y3 - y2) - Δyt);
 	> fx = ((x3 - x2) - Δxt); */
-
+	fy = ((y3 - y2) - Dyt);
+	fx = ((x3 - x2) - Dxt);
 	/* Kapanma hataları eklenen, Koordinat farkları;
 	> Δx1, Δx2, Δx3, Δx4, Δx5, Δx6, Δx7, Δx8, Δx9, Δx10
 	> Δy1, Δy2, Δy3, Δy4, Δy5, Δy6, Δy7, Δy8, Δy9, Δy10
