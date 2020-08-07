@@ -193,40 +193,51 @@ int main()
 	> Fβ = (1.5) * (Sqrt(n)); */
 	FB = (1.5) * (pow((n), 0.5));
 	printf("Açı kapanma hata sınırı (FB) değeri: %f\n", FB);
-
 	/* Açı kapanma hatası eklenen semt açıları
 	2. ve 3. noktalar arası Semt açısı
 	> β1 = βo + α1 + (fβ / n); */
-
+	B1 = Bo + a1 + (fB / n);
+	printf("B1 değeri: %f\n", B1);
 	/* 3. ve 4. noktalar arası semt açısı
 	> β2 = β1 + α2 + (fβ / n); */
-
+	B2 = B1 + a2 + (fB / n);
+	printf("B2 değeri: %f\n", B2);
 	/* 4. ve 5. noktalar arası semt açısı
 	> β3 = β2 + α3 + (fβ / n); */
-
+	B3 = B2 + a3 + (fB / n);
+	printf("B3 değeri: %f\n", B3);
 	/* 5. ve 6. noktalar arası semt açısı
 	> β4 = β3 + α4 + (fβ / n); */
-
+	B4 = B3 + a4 + (fB / n);
+	printf("B4 değeri: %f\n", B4);
 	/* 6. ve 7. noktalar arası semt açısı
 	> β5 = β4 + α5 + (fβ / n); */
-
+	B5 = B4 + a5 + (fB / n);
+	printf("B5 değeri: %f\n", B5);
 	/* 7. ve 8. noktalar arası semt açısı
 	> β6 = β5 + α6 + (fβ / n); */
-
+	B6 = B5 + a6 + (fB / n);
+	printf("B6 değeri: %f\n", B6);
 	/* 8. ve 9. noktalar arası semt açısı
 	> β7 = β6 + α7 + (fβ / n); */
-
+	B7 = B6 + a7 + (fB / n);
+	printf("B7 değeri: %f\n", B7);
 	/* 9. ve 10. noktalar arası semt açısı
 	> β8 = β7 + α8 + (fβ / n); */
-
+	B8 = B7 + a8 + (fB / n);
+	printf("B8 değeri: %f\n", B8);
 	/* 10. ve 11. noktalar arası semt açısı
 	> β9 = β8 + α9 + (fβ / n); */
-
+	B9 = B8 + a9 + (fB / n);
+	printf("B9 değeri: %f\n", B9);
 	/* 11. ve 12. noktalar arası semt açısı
 	> β10 = β9 + α10 + (fβ / n); */
-
+	B10 = B9 + a10 + (fB / n);
+	printf("B10 değeri: %f\n", B10);
 	/* 12. ve 13. noktalar arası semt açısı
 	> β11 = β10 + α11 + (fβ / n); */
+	B11 = B10 + a11 + (fB / n);
+	printf("B11 değeri: %f\n", B11);
 
 	/* Yaklaşık koordinat farklarını hesaplayalım;
 	> Δxo1, Δxo2, Δxo3, Δxo4, Δxo5, Δxo6, Δxo7, Δxo8, Δxo9, Δxo10
