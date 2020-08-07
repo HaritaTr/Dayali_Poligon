@@ -35,7 +35,7 @@ int main()
 	scanf("%lf", &a10);
 	printf("a11 değerini giriniz: ");
 	scanf("%lf", &a11);
-	printf("n değerini giriniz: ");
+	printf("n yatay açı değerini giriniz: ");
 	scanf("%lf", &n);
 	// Ölçülen koordinat değerleri; x1, y1, x2, y2, x3, y3, x4, y4;
 	printf("x1 değerini giriniz: ");
@@ -104,7 +104,9 @@ int main()
 	So = pow(((pow((x1 - x2), 2)) + pow((y1 - y2), 2)), 0.5);
 	S11 = pow(((pow((x3 - x4), 2)) + pow((y3 - y4), 2)), 0.5);
 	St = S1 + S2 + S3 + S4 + S5 + S6 + S7 + S8 + S9 + S10;
-
+	printf("So değeri: %f\n", So);
+	printf("S11 değeri: %f\n", S11);
+	printf("St değeri: %f\n", St);
 	/* 1. ve 2. noktalar arasındaki, semt açısı (Dengelenmiş başlangıç noktaları-Nirengi)
 	> βo = Atan((y2 - y1) / (x2 - x1)) * 200 / PI;
 	NOT: Açı ‘0’ dan küçük ise +200 eklenir. ‘0’dan büyük ve eşit ise açı değeri korunur. */
